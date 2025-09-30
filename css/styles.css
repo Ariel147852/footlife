@@ -1,8 +1,233 @@
-.contenedor{
-}
-.contenedor1{
-    text-align: center;
-    color: rgb(173, 31, 31);
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
     font-family: 'Arial', sans-serif;
-    margin-top: -150px;
-    }
+    background-color: rgb(240, 240, 240);
+}
+
+/* Estilos para el encabezado */
+.brand {
+    text-align: center;
+    background-color: rgb(10, 160, 190);
+    width: 100%;
+    height: 150px;
+}
+
+/*.contenido1 h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 4px rgb(0, 0, 0);
+    font-size: 5rem;
+    margin: 0;
+    padding: 0.5rem 0;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    background-color: rgb(10, 160, 190);
+}*/
+/* Estilos para el texto debajo del logo */
+.contenido1 p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    font-size: 4.0rem;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    background-color: rgb(10, 160, 190);
+}
+
+/* Estilos para la barra de navegación */
+.navegacion {
+    color: rgb(0, 0, 0);
+    background-color: rgb(10, 160, 190);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Estilos para la lista de navegación home,servicios,contactos,preguntasfrecuentes*/
+.navegacion ul {
+    list-style: none;
+    /* Quita viñetas */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Los pone en fila */
+    justify-content: center;
+    /* Centra el menú */
+    gap: 20px;
+    /* Espacio entre items */
+}
+
+/* Estilos para los enlaces de navegación */
+.navegacion ul li {
+    display: inline;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 2.0rem;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.3s ease;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(5, 136, 243);
+    border-radius: 8px;
+    padding: 5px 15px;
+}
+
+/* Estilos para los enlaces */
+.navegacion ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(10, 160, 190);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    /* Suaviza cambios */
+    box-shadow: 0 4px 0 #005fa3;
+    /* Sombra para efecto de relieve */
+    display: inline-block;
+}
+
+/* Efecto al pasar el mouse */
+.navegacion ul li a:hover {
+    background-color: rgb(255, 255, 255);
+    transform: translateY(2px);
+    /* Se mueve un poco hacia abajo */
+    box-shadow: 0 2px 0 #ebebeb;
+    /* Sombra más corta (se ve hundido) */
+}
+
+/* Efecto al hacer clic */
+.navegacion ul li a:active {
+    transform: translateY(4px);
+    box-shadow: 0 1px 0 #0c63aa;
+}
+
+/* Estilos para el contenido principal */
+#contenido {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: rgb(33, 33, 33);
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Estilo del título principal de la sección */
+#servicios-destacados {
+    font-size: 2rem;
+    /* tamaño grande */
+    text-align: center;
+    /* centrado */
+    color: #333;
+    /* color oscuro */
+    margin-bottom: 30px;
+    /* espacio abajo */
+    font-weight: 700;
+    /* negrita */
+    text-transform: uppercase;
+    /* opcional: mayúsculas */
+    letter-spacing: 2px;
+    /* espacio entre letras */
+    text-shadow: #030303 2px 2px 2px;
+    /* sombra para resaltar */
+}
+
+/* Para toda la sección de servicios */
+section[aria-labelledby="servicios-destacados"] {
+    padding: 50px 20px;
+    /* espacio interno arriba y abajo */
+    background-color: #f0f8ff;
+    /* fondo suave para destacar la sección */
+}
+
+/* Colores de fondo específicos para cada artículo */
+
+.grid-servicios article:nth-child(1) {
+    background: #e3f2fd;
+}
+
+.grid-servicios article:nth-child(2) {
+    background: #fce4ec;
+}
+
+.grid-servicios article:nth-child(3) {
+    background: #e8f5e9;
+}
+
+.grid-servicios article:nth-child(4) {
+    background: #fff3e0;
+}
+
+.grid-servicios article:nth-child(5) {
+    background: #ede7f6;
+}
+
+/* Estilo general para los artículos de servicios */
+.grid-servicios article {
+    background-color: #f9f9f9;
+    /* color de fondo suave */
+    border: 1px solid #ddd;
+    /* borde ligero */
+    border-radius: 10px;
+    /* bordes redondeados */
+    padding: 20px;
+    /* espacio interno */
+    margin: 10px;
+    /* separación entre artículos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* sombra ligera */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* animación suave */
+}
+
+.grid-servicios article:hover {
+    transform: translateY(-5px);
+    /* efecto de levantar al pasar el mouse */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* sombra más fuerte */
+}
+
+/* Estilo del botón "Ver más" */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007bff;
+    /* color azul */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    /* azul más oscuro al pasar el mouse */
+    transform: scale(1.05);
+    /* efecto pequeño de agrandar */
+}
+
+/* Opcional: hacer que los artículos estén en un grid */
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    /* espacio entre los artículos */
+}
