@@ -1,163 +1,135 @@
 /* Estilos generales */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: rgb(240, 240, 240);
+    margin: 0; /*Quita margen por defecto*/
+    padding: 0; /*Quita padding por defecto*/
+    font-family: 'Arial', sans-serif; /*Fuente clara y legible*/
+    background-color: rgb(10, 160, 190); /*Fondo gris claro*/
+}
+/* Estilos para la imagen de podología */
+.img-podologia {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  top: -90px;
 }
 
 /* Estilos para el encabezado */
 .brand {
-    text-align: center;
+    padding: 0; /*Espacio interno*/
+    text-align: left; /*logo a la izquierda*/
     background-color: rgb(10, 160, 190);
-    width: 100%;
-    height: 150px;
 }
 
-/*.contenido1 h1 {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    text-shadow: 5px 5px 4px rgb(0, 0, 0);
-    font-size: 5rem;
-    margin: 0;
-    padding: 0.5rem 0;
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    letter-spacing: 2px;
-    line-height: 1.2;
-    background-color: rgb(10, 160, 190);
-}*/
 /* Estilos para el texto debajo del logo */
 .contenido1 p {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    text-shadow: 5px 5px 5px rgb(0, 0, 0);
-    font-size: 4.0rem;
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    line-height: 1.5;
+    text-align: center; /*centrado*/
+    color: rgb(12, 12, 12); /*blanco*/
+    font-size: 4.0rem; /*tamaño grande*/
+    margin: 0; /*sin margen*/
+    font-family: 'Arial', sans-serif; /*fuente clara y legible*/
+    font-weight: bold; /*negrita*/
+    line-height: 1.5; /*espacio entre líneas*/
+    position: relative; /*Para posicionamiento absoluto*/
+    top: -30px; /*Ajusta la posición vertical*/
     background-color: rgb(10, 160, 190);
 }
 
 /* Estilos para la barra de navegación */
 .navegacion {
-    color: rgb(0, 0, 0);
-    background-color: rgb(10, 160, 190);
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    padding: 0.5rem 0;
-    margin: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    /*background-color: rgb(10, 160, 190);*/ /*azul turquesa como en la imagen*/
+    display: flex; /*Flexbox para alinear items*/
+    justify-content: space-between; /*logo a la izquierda y menú a la derecha*/
+    position: relative; /*Para posicionamiento absoluto*/
+    top: -845px; /*Ajusta la posición vertical*/
 }
 
 /* Estilos para la lista de navegación home,servicios,contactos,preguntasfrecuentes*/
 .navegacion ul {
-    list-style: none;
-    /* Quita viñetas */
+    list-style: none; /*Quita viñetas*/
     padding: 0;
     margin: 0;
-    display: flex;
-    /* Los pone en fila */
-    justify-content: center;
-    /* Centra el menú */
-    gap: 20px;
-    /* Espacio entre items */
+    display: flex; /*Los pone en fila*/
+    justify-content: center;    /*Centra el menú*/
+    gap: 20px; /*Espacio entre items*/
+    position: relative; /*Para posicionamiento absoluto*/
+    top: -300px; /*Ajusta la posición vertical*/
+    margin-left: 450px; /*Ajusta la posición horizontal*/
 }
 
 /* Estilos para los enlaces de navegación */
 .navegacion ul li {
-    display: inline;
-    margin: 0 10px;
-    font-weight: bold;
-    font-size: 2.0rem;
-    font-family: 'Arial', sans-serif;
-    transition: color 0.3s ease;
-    border: 1px solid rgb(255, 255, 255);
-    background-color: rgb(5, 136, 243);
-    border-radius: 8px;
-    padding: 5px 15px;
+    display: inline; /*En línea*/
+    margin: 0 10px; /*Espacio entre ellos*/
+    font-weight: bold; /*Negrita*/
+    font-size: 1.8rem; /*Tamaño legible*/
+    font-family: 'Arial', sans-serif; /*Fuente clara*/
+    transition: color 0.3s ease; /*Suaviza cambios de color*/
+    /*background-color: rgb(5, 136, 243);*/
+    padding: 6px;
 }
 
 /* Estilos para los enlaces */
 .navegacion ul li a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    background-color: rgb(10, 160, 190);
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: all 0.2s ease-in-out;
-    /* Suaviza cambios */
-    box-shadow: 0 4px 0 #005fa3;
-    /* Sombra para efecto de relieve */
-    display: inline-block;
+    text-decoration: none; /*Quita subrayado*/
+    color: rgb(255, 253, 253); /*Blanco*/
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px; /*Bordes redondeados*/
+    font-weight: bold; /*Negrita*/
+    transition: all 0.2s ease-in-out; /*Suaviza cambios*/
+    box-shadow: 0 4px 0 #f6f6f7; /*Sombra para efecto de relieve*/
+    display: inline-block; /*Para aplicar transformaciones*/
 }
 
-/* Efecto al pasar el mouse */
+/*Efecto al pasar el mouse*/
 .navegacion ul li a:hover {
-    background-color: rgb(255, 255, 255);
-    transform: translateY(2px);
-    /* Se mueve un poco hacia abajo */
-    box-shadow: 0 2px 0 #ebebeb;
-    /* Sombra más corta (se ve hundido) */
+    background-color: rgb(104, 165, 245);
+    transform: translateY(2px); /*Se mueve un poco hacia abajo*/
+    box-shadow: 0 2px 0 #ebebeb; /*Sombra más corta (se ve hundido)*/
 }
 
-/* Efecto al hacer clic */
+/*Efecto al hacer clic*/
 .navegacion ul li a:active {
-    transform: translateY(4px);
-    box-shadow: 0 1px 0 #0c63aa;
+    transform: translateY(4px); /*Se mueve más hacia abajo*/
+    box-shadow: 0 1px 0 #0c63aa; /*Sombra aún más corta*/
 }
 
-/* Estilos para el contenido principal */
+/*Estilos para el contenido principal*/
 #contenido {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: rgb(33, 33, 33);
-    font-family: 'Arial', sans-serif;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: justify;
+    padding: 20px; /*espacio interno*/
+    max-width: 1200px; /*ancho máximo*/
+    margin: 0 auto; /*centra el contenido*/
+    background-color: rgb(255, 255, 255); /*fondo blanco*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*sombra ligera*/
+    border-radius: 8px; /*bordes redondeados*/
+    font-size: 1.2rem; /*tamaño de fuente legible*/
+    line-height: 1.6; /*espacio entre líneas*/
+    color: rgb(33, 33, 33); /*color de texto oscuro*/
+    font-family: 'Arial', sans-serif; /*fuente clara y legible*/
+    margin-bottom: 20px; /*espacio abajo*/
+    text-align: justify; /*justificado*/
+    position: relative;
 }
 
-/* Estilo del título principal de la sección */
+/*Estilo del título principal de la sección*/
 #servicios-destacados {
-    font-size: 2rem;
-    /* tamaño grande */
-    text-align: center;
-    /* centrado */
-    color: #333;
-    /* color oscuro */
-    margin-bottom: 30px;
-    /* espacio abajo */
-    font-weight: 700;
-    /* negrita */
-    text-transform: uppercase;
-    /* opcional: mayúsculas */
-    letter-spacing: 2px;
-    /* espacio entre letras */
-    text-shadow: #030303 2px 2px 2px;
-    /* sombra para resaltar */
+    font-size: 2rem; /*tamaño grande*/
+    text-align: center; /*centrado*/
+    color: #333; /*color oscuro*/
+    margin-bottom: 30px; /*espacio abajo*/
+    font-weight: 700; /*negrita*/
+    text-transform: uppercase; /*opcional: mayúsculas*/
+    letter-spacing: 2px; /*espacio entre letras*/
+    text-shadow: #030303 2px 2px 2px; /*sombra para resaltar*/
 }
 
-/* Para toda la sección de servicios */
+/*Para toda la sección de servicios*/
 section[aria-labelledby="servicios-destacados"] {
-    padding: 50px 20px;
-    /* espacio interno arriba y abajo */
-    background-color: #f0f8ff;
-    /* fondo suave para destacar la sección */
+    padding: 50px 20px; /*espacio interno arriba y abajo*/
+    background-color: #f0f8ff; /*fondo suave para destacar la sección*/
 }
 
-/* Colores de fondo específicos para cada artículo */
+/*Colores de fondo específicos para cada artículo*/
 
 .grid-servicios article:nth-child(1) {
     background: #e3f2fd;
@@ -179,55 +151,159 @@ section[aria-labelledby="servicios-destacados"] {
     background: #ede7f6;
 }
 
-/* Estilo general para los artículos de servicios */
+/*Estilo general para los artículos de servicios*/
 .grid-servicios article {
-    background-color: #f9f9f9;
-    /* color de fondo suave */
-    border: 1px solid #ddd;
-    /* borde ligero */
-    border-radius: 10px;
-    /* bordes redondeados */
-    padding: 20px;
-    /* espacio interno */
-    margin: 10px;
-    /* separación entre artículos */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* sombra ligera */
-    transition: transform 0.3s, box-shadow 0.3s;
-    /* animación suave */
+    background-color: #f9f9f9; /*color de fondo suave*/
+    border: 1px solid #ddd; /*borde ligero*/
+    border-radius: 10px; /*bordes redondeados*/
+    padding: 20px; /*espacio interno*/
+    margin: 10px; /*separación entre artículos*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*sombra ligera*/
+    transition: transform 0.3s, box-shadow 0.3s; /*suaviza cambios*/
 }
 
+/*Efecto al pasar el mouse sobre un artículo*/
 .grid-servicios article:hover {
-    transform: translateY(-5px);
-    /* efecto de levantar al pasar el mouse */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    /* sombra más fuerte */
+    transform: translateY(-5px); /*efecto de levantar al pasar el mouse*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /*sombra más fuerte*/
 }
 
-/* Estilo del botón "Ver más" */
+/*Estilo del botón "Ver más"*/
 .btn {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #007bff;
-    /* color azul */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block; /*para que se comporte como botón*/
+    text-decoration: none; /*quita subrayado*/
+    background-color: #007bff; /*color de fondo azul*/
+    color: white; /*color del texto*/
+    padding: 10px 20px; /*espaciado*/
+    border-radius: 5px; /*bordes redondeados*/
+    font-weight: bold; /*negrita*/
+    transition: background-color 0.3s, transform 0.3s; /*suaviza cambios*/
 }
 
 .btn:hover {
-    background-color: #0056b3;
-    /* azul más oscuro al pasar el mouse */
-    transform: scale(1.05);
-    /* efecto pequeño de agrandar */
+    background-color: #0056b3; /*azul más oscuro al pasar el mouse*/
+    transform: scale(1.05); /*efecto pequeño de agrandar*/
 }
 
-/* Opcional: hacer que los artículos estén en un grid */
+/*Estilos para la cuadrícula de servicios*/
 .grid-servicios {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    /* espacio entre los artículos */
+    display: grid; /*usa grid layout*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*columnas adaptables*/
+    gap: 20px; /*espacio entre los artículos*/
+}
+
+/*CONTACTOS Y REDES SOCIALES*/
+.contacto {
+    padding: 20px; /*espacio interno*/
+    max-width: 1200px; /*ancho máximo*/
+    margin: 0 auto; /*centra el contenido*/
+    background-color: rgb(255, 255, 255); /*fondo blanco*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*sombra ligera*/
+    border-radius: 8px; /*bordes redondeados*/
+    font-size: 1.2rem; /*tamaño de fuente legible*/
+    line-height: 1.6; /*espacio entre líneas*/
+    color: rgb(33, 33, 33); /*color de texto oscuro*/
+    font-family: 'Arial', sans-serif; /*fuente clara y legible*/
+    margin-bottom: 20px; /*espacio abajo*/
+    text-align: justify; /*justificado*/
+    position: relative;
+}
+
+.contacto h4 {
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: #030303 1px 1px 1px;
+}
+
+.contacto ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para lista vertical */
+    gap: 10px; /* Espacio entre los elementos de la lista */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    justify-content: center;
+}
+
+.contacto ul li {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el icono y el texto */
+    background-color: #f9f9f9; /* Fondo suave */
+    padding: 8px; /* Espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Suaviza cambios */
+}
+
+.contacto ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    /*background-color: #e0f7fa;*/ /* Fondo azul claro */
+    padding: 6px;
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    display: inline-block; /* Para aplicar transformaciones */
+    font-weight: bold; /* Negrita */
+    transition: all 0.2s ease-in-out; /* Suaviza cambios */
+    box-shadow: 0 4px 0 #f6f6f7; /* Sombra para efecto de relieve */
+    text-align: center; /* Centra el texto */
+    width: 100%; /* Hace que el enlace ocupe todo el ancho del li */
+}
+
+.contacto ul li a:hover {
+    /*color: #0aa0be;*/ /*cambia al pasar el mouse*/
+    /*background-color: #b2ebf2;*/ /*Fondo azul más claro al pasar el mouse*/
+    transform: translateY(2px); /*Se mueve un poco hacia abajo*/
+    box-shadow: 0 2px 0 #ebebeb; /*Sombra más corta (se ve hundido)*/
+}
+
+/*Selecciona solo el enlace que contiene "facebook.com"*/
+a[href*="facebook.com"] {
+    color: #3b5998; /* azul Facebook */
+    font-weight: bold;
+}
+
+a[href*="facebook.com"]:hover {
+    color: #0d3050; /* más oscuro al pasar el mouse */
+}
+
+/* Selecciona solo el enlace que contiene "instagram.com" */
+a[href*="instagram.com"] {
+    color: #E1306C; /* rosa Instagram */
+    font-weight: bold;
+}
+a[href*="instagram.com"]:hover {
+    color: #9b0036; /* más oscuro al pasar el mouse */
+}
+/* Selecciona solo el enlace que contiene "wa.me" (WhatsApp) */
+a[href*="wa.me"] {
+    color: #25D366; /* verde WhatsApp */
+    font-weight: bold;
+}
+a[href*="wa.me"]:hover {
+    color: #128C7E; /* más oscuro al pasar el mouse */
+}
+
+/* Selecciona solo el enlace que contiene "tiktok.com" */
+a[href*="tiktok.com"] {
+    color: #010101; /* color negro típico de TikTok */
+    font-weight: bold;
+}
+
+a[href*="tiktok.com"]:hover {
+    color: #69c9d0; /* azul turquesa de TikTok al pasar mouse */
 }
