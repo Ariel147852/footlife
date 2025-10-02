@@ -1,132 +1,199 @@
 /* Estilos generales */
 body {
-    margin: 0; /*Quita margen por defecto*/
-    padding: 0; /*Quita padding por defecto*/
-    font-family: 'Arial', sans-serif; /*Fuente clara y legible*/
-    background-color: rgb(10, 160, 190); /*Fondo gris claro*/
+    margin: 0;
+    /*Quita margen por defecto*/
+    padding: 0;
+    /*Quita padding por defecto*/
+    font-family: 'Arial', sans-serif;
+    /*Fuente clara y legible*/
+    background-color: rgb(10, 160, 190);
+    /*Fondo gris claro*/
 }
+
 /* Estilos para la imagen de podología */
 .img-podologia {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  position: relative;
-  top: -90px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    top: -90px;
 }
 
 /* Estilos para el encabezado */
 .brand {
-    padding: 0; /*Espacio interno*/
-    text-align: left; /*logo a la izquierda*/
+    padding: 0;
+    /*Espacio interno*/
+    text-align: left;
+    /*logo a la izquierda*/
     background-color: rgb(10, 160, 190);
 }
 
 /* Estilos para el texto debajo del logo */
 .contenido1 p {
-    text-align: center; /*centrado*/
-    color: rgb(12, 12, 12); /*blanco*/
-    font-size: 4.0rem; /*tamaño grande*/
-    margin: 0; /*sin margen*/
-    font-family: 'Arial', sans-serif; /*fuente clara y legible*/
-    font-weight: bold; /*negrita*/
-    line-height: 1.5; /*espacio entre líneas*/
-    position: relative; /*Para posicionamiento absoluto*/
-    top: -30px; /*Ajusta la posición vertical*/
+    text-align: center;
+    /*centrado*/
+    color: rgb(12, 12, 12);
+    /*blanco*/
+    font-size: 4.0rem;
+    /*tamaño grande*/
+    margin: 0;
+    /*sin margen*/
+    font-family: 'Arial', sans-serif;
+    /*fuente clara y legible*/
+    font-weight: bold;
+    /*negrita*/
+    line-height: 1.5;
+    /*espacio entre líneas*/
+    position: relative;
+    /*Para posicionamiento absoluto*/
+    top: -30px;
+    /*Ajusta la posición vertical*/
     background-color: rgb(10, 160, 190);
 }
 
 /* Estilos para la barra de navegación */
 .navegacion {
-    /*background-color: rgb(10, 160, 190);*/ /*azul turquesa como en la imagen*/
-    display: flex; /*Flexbox para alinear items*/
-    justify-content: space-between; /*logo a la izquierda y menú a la derecha*/
-    position: relative; /*Para posicionamiento absoluto*/
-    top: -845px; /*Ajusta la posición vertical*/
+    /*background-color: rgb(10, 160, 190);*/
+    /*azul turquesa como en la imagen*/
+    display: flex;
+    /*Flexbox para alinear items*/
+    justify-content: space-between;
+    /*logo a la izquierda y menú a la derecha*/
+    position: relative;
+    /*Para posicionamiento absoluto*/
+    top: -845px;
+    /*Ajusta la posición vertical*/
 }
 
 /* Estilos para la lista de navegación home,servicios,contactos,preguntasfrecuentes*/
 .navegacion ul {
-    list-style: none; /*Quita viñetas*/
+    list-style: none;
+    /*Quita viñetas*/
     padding: 0;
     margin: 0;
-    display: flex; /*Los pone en fila*/
-    justify-content: center;    /*Centra el menú*/
-    gap: 20px; /*Espacio entre items*/
-    position: relative; /*Para posicionamiento absoluto*/
-    top: -300px; /*Ajusta la posición vertical*/
-    margin-left: 450px; /*Ajusta la posición horizontal*/
+    display: flex;
+    /*Los pone en fila*/
+    justify-content: center;
+    /*Centra el menú*/
+    gap: 20px;
+    /*Espacio entre items*/
+    position: relative;
+    /*Para posicionamiento absoluto*/
+    top: -300px;
+    /*Ajusta la posición vertical*/
+    margin-left: 450px;
+    /*Ajusta la posición horizontal*/
 }
 
 /* Estilos para los enlaces de navegación */
 .navegacion ul li {
-    display: inline; /*En línea*/
-    margin: 0 10px; /*Espacio entre ellos*/
-    font-weight: bold; /*Negrita*/
-    font-size: 1.8rem; /*Tamaño legible*/
-    font-family: 'Arial', sans-serif; /*Fuente clara*/
-    transition: color 0.3s ease; /*Suaviza cambios de color*/
+    display: inline;
+    /*En línea*/
+    margin: 0 10px;
+    /*Espacio entre ellos*/
+    font-weight: bold;
+    /*Negrita*/
+    font-size: 1.8rem;
+    /*Tamaño legible*/
+    font-family: 'Arial', sans-serif;
+    /*Fuente clara*/
+    transition: color 0.3s ease;
+    /*Suaviza cambios de color*/
     /*background-color: rgb(5, 136, 243);*/
     padding: 6px;
 }
 
 /* Estilos para los enlaces */
 .navegacion ul li a {
-    text-decoration: none; /*Quita subrayado*/
-    color: rgb(255, 253, 253); /*Blanco*/
+    text-decoration: none;
+    /*Quita subrayado*/
+    color: rgb(255, 253, 253);
+    /*Blanco*/
     background-color: rgb(0, 0, 0);
-    border-radius: 8px; /*Bordes redondeados*/
-    font-weight: bold; /*Negrita*/
-    transition: all 0.2s ease-in-out; /*Suaviza cambios*/
-    box-shadow: 0 4px 0 #f6f6f7; /*Sombra para efecto de relieve*/
-    display: inline-block; /*Para aplicar transformaciones*/
+    border-radius: 8px;
+    /*Bordes redondeados*/
+    font-weight: bold;
+    /*Negrita*/
+    transition: all 0.2s ease-in-out;
+    /*Suaviza cambios*/
+    box-shadow: 0 4px 0 #f6f6f7;
+    /*Sombra para efecto de relieve*/
+    display: inline-block;
+    /*Para aplicar transformaciones*/
 }
 
 /*Efecto al pasar el mouse*/
 .navegacion ul li a:hover {
     background-color: rgb(104, 165, 245);
-    transform: translateY(2px); /*Se mueve un poco hacia abajo*/
-    box-shadow: 0 2px 0 #ebebeb; /*Sombra más corta (se ve hundido)*/
+    transform: translateY(2px);
+    /*Se mueve un poco hacia abajo*/
+    box-shadow: 0 2px 0 #ebebeb;
+    /*Sombra más corta (se ve hundido)*/
 }
 
 /*Efecto al hacer clic*/
 .navegacion ul li a:active {
-    transform: translateY(4px); /*Se mueve más hacia abajo*/
-    box-shadow: 0 1px 0 #0c63aa; /*Sombra aún más corta*/
+    transform: translateY(4px);
+    /*Se mueve más hacia abajo*/
+    box-shadow: 0 1px 0 #0c63aa;
+    /*Sombra aún más corta*/
 }
 
 /*Estilos para el contenido principal*/
 #contenido {
-    padding: 20px; /*espacio interno*/
-    max-width: 1200px; /*ancho máximo*/
-    margin: 0 auto; /*centra el contenido*/
-    background-color: rgb(255, 255, 255); /*fondo blanco*/
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*sombra ligera*/
-    border-radius: 8px; /*bordes redondeados*/
-    font-size: 1.2rem; /*tamaño de fuente legible*/
-    line-height: 1.6; /*espacio entre líneas*/
-    color: rgb(33, 33, 33); /*color de texto oscuro*/
-    font-family: 'Arial', sans-serif; /*fuente clara y legible*/
-    margin-bottom: 20px; /*espacio abajo*/
-    text-align: justify; /*justificado*/
+    padding: 20px;
+    /*espacio interno*/
+    max-width: 1200px;
+    /*ancho máximo*/
+    margin: 0 auto;
+    /*centra el contenido*/
+    background-color: rgb(255, 255, 255);
+    /*fondo blanco*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /*sombra ligera*/
+    border-radius: 8px;
+    /*bordes redondeados*/
+    font-size: 1.2rem;
+    /*tamaño de fuente legible*/
+    line-height: 1.6;
+    /*espacio entre líneas*/
+    color: rgb(33, 33, 33);
+    /*color de texto oscuro*/
+    font-family: 'Arial', sans-serif;
+    /*fuente clara y legible*/
+    margin-bottom: 20px;
+    /*espacio abajo*/
+    text-align: justify;
+    /*justificado*/
     position: relative;
 }
 
 /*Estilo del título principal de la sección*/
 #servicios-destacados {
-    font-size: 2rem; /*tamaño grande*/
-    text-align: center; /*centrado*/
-    color: #333; /*color oscuro*/
-    margin-bottom: 30px; /*espacio abajo*/
-    font-weight: 700; /*negrita*/
-    text-transform: uppercase; /*opcional: mayúsculas*/
-    letter-spacing: 2px; /*espacio entre letras*/
-    text-shadow: #030303 2px 2px 2px; /*sombra para resaltar*/
+    font-size: 2rem;
+    /*tamaño grande*/
+    text-align: center;
+    /*centrado*/
+    color: #333;
+    /*color oscuro*/
+    margin-bottom: 30px;
+    /*espacio abajo*/
+    font-weight: 700;
+    /*negrita*/
+    text-transform: uppercase;
+    /*opcional: mayúsculas*/
+    letter-spacing: 2px;
+    /*espacio entre letras*/
+    text-shadow: #030303 2px 2px 2px;
+    /*sombra para resaltar*/
 }
 
 /*Para toda la sección de servicios*/
 section[aria-labelledby="servicios-destacados"] {
-    padding: 50px 20px; /*espacio interno arriba y abajo*/
-    background-color: #f0f8ff; /*fondo suave para destacar la sección*/
+    padding: 50px 20px;
+    /*espacio interno arriba y abajo*/
+    background-color: #f0f8ff;
+    /*fondo suave para destacar la sección*/
 }
 
 /*Colores de fondo específicos para cada artículo*/
@@ -153,60 +220,93 @@ section[aria-labelledby="servicios-destacados"] {
 
 /*Estilo general para los artículos de servicios*/
 .grid-servicios article {
-    background-color: #f9f9f9; /*color de fondo suave*/
-    border: 1px solid #ddd; /*borde ligero*/
-    border-radius: 10px; /*bordes redondeados*/
-    padding: 20px; /*espacio interno*/
-    margin: 10px; /*separación entre artículos*/
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*sombra ligera*/
-    transition: transform 0.3s, box-shadow 0.3s; /*suaviza cambios*/
+    background-color: #f9f9f9;
+    /*color de fondo suave*/
+    border: 1px solid #ddd;
+    /*borde ligero*/
+    border-radius: 10px;
+    /*bordes redondeados*/
+    padding: 20px;
+    /*espacio interno*/
+    margin: 10px;
+    /*separación entre artículos*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /*sombra ligera*/
+    transition: transform 0.3s, box-shadow 0.3s;
+    /*suaviza cambios*/
 }
 
 /*Efecto al pasar el mouse sobre un artículo*/
 .grid-servicios article:hover {
-    transform: translateY(-5px); /*efecto de levantar al pasar el mouse*/
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /*sombra más fuerte*/
+    transform: translateY(-5px);
+    /*efecto de levantar al pasar el mouse*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /*sombra más fuerte*/
 }
 
 /*Estilo del botón "Ver más"*/
 .btn {
-    display: inline-block; /*para que se comporte como botón*/
-    text-decoration: none; /*quita subrayado*/
-    background-color: #007bff; /*color de fondo azul*/
-    color: white; /*color del texto*/
-    padding: 10px 20px; /*espaciado*/
-    border-radius: 5px; /*bordes redondeados*/
-    font-weight: bold; /*negrita*/
-    transition: background-color 0.3s, transform 0.3s; /*suaviza cambios*/
+    display: inline-block;
+    /*para que se comporte como botón*/
+    text-decoration: none;
+    /*quita subrayado*/
+    background-color: #007bff;
+    /*color de fondo azul*/
+    color: white;
+    /*color del texto*/
+    padding: 10px 20px;
+    /*espaciado*/
+    border-radius: 5px;
+    /*bordes redondeados*/
+    font-weight: bold;
+    /*negrita*/
+    transition: background-color 0.3s, transform 0.3s;
+    /*suaviza cambios*/
 }
 
 .btn:hover {
-    background-color: #0056b3; /*azul más oscuro al pasar el mouse*/
-    transform: scale(1.05); /*efecto pequeño de agrandar*/
+    background-color: #0056b3;
+    /*azul más oscuro al pasar el mouse*/
+    transform: scale(1.05);
+    /*efecto pequeño de agrandar*/
 }
 
 /*Estilos para la cuadrícula de servicios*/
 .grid-servicios {
-    display: grid; /*usa grid layout*/
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*columnas adaptables*/
-    gap: 20px; /*espacio entre los artículos*/
+    display: grid;
+    /*usa grid layout*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /*columnas adaptables*/
+    gap: 20px;
+    /*espacio entre los artículos*/
 }
 
 /*CONTACTOS Y REDES SOCIALES*/
 .contacto {
-    padding: 20px; /*espacio interno*/
-    max-width: 1200px; /*ancho máximo*/
-    margin: 0 auto; /*centra el contenido*/
-    background-color: rgb(255, 255, 255); /*fondo blanco*/
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*sombra ligera*/
-    border-radius: 8px; /*bordes redondeados*/
-    font-size: 1.2rem; /*tamaño de fuente legible*/
-    line-height: 1.6; /*espacio entre líneas*/
-    color: rgb(33, 33, 33); /*color de texto oscuro*/
-    font-family: 'Arial', sans-serif; /*fuente clara y legible*/
-    margin-bottom: 20px; /*espacio abajo*/
-    text-align: justify; /*justificado*/
-    position: relative;
+    padding: 20px;
+    /*espacio interno*/
+    max-width: 1200px;
+    /*ancho máximo*/
+    margin: 0 auto;
+    /*centra el contenido*/
+    background-color: rgb(255, 255, 255);
+    /*fondo blanco*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /*sombra ligera*/
+    border-radius: 8px;
+    /*bordes redondeados*/
+    font-size: 1.2rem;
+    /*tamaño de fuente legible*/
+    line-height: 1.6;
+    /*espacio entre líneas*/
+    color: rgb(33, 33, 33);
+    /*color de texto oscuro*/
+    font-family: 'Arial', sans-serif;
+    /*fuente clara y legible*/
+    margin-bottom: 20px;
+    /*espacio abajo*/
+    text-align: justify;
+    /*justificado*/
 }
 
 .contacto h4 {
@@ -220,13 +320,16 @@ section[aria-labelledby="servicios-destacados"] {
 }
 
 .contacto ul {
-    list-style: none; 
+    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: column; /* Cambiado a columna para lista vertical */
-    gap: 10px; /* Espacio entre los elementos de la lista */
-    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    flex-direction: column;
+    /* Cambiado a columna para lista vertical */
+    gap: 10px;
+    /* Espacio entre los elementos de la lista */
+    align-items: flex-start;
+    /* Alinea los elementos a la izquierda */
     justify-content: center;
 }
 
@@ -238,72 +341,430 @@ section[aria-labelledby="servicios-destacados"] {
     color: #555;
     display: flex;
     align-items: center;
-    gap: 10px; /* Espacio entre el icono y el texto */
-    background-color: #f9f9f9; /* Fondo suave */
-    padding: 8px; /* Espacio interno */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    transition: background-color 0.3s, box-shadow 0.3s; /* Suaviza cambios */
+    gap: 10px;
+    /* Espacio entre el icono y el texto */
+    background-color: #f9f9f9;
+    /* Fondo suave */
+    padding: 8px;
+    /* Espacio interno */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* Suaviza cambios */
 }
 
 .contacto ul li a {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-    /*background-color: #e0f7fa;*/ /* Fondo azul claro */
+    /*background-color: #e0f7fa;*/
+    /* Fondo azul claro */
     padding: 6px;
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
     font-family: 'Arial', sans-serif;
     font-size: 1.2rem;
-    display: inline-block; /* Para aplicar transformaciones */
-    font-weight: bold; /* Negrita */
-    transition: all 0.2s ease-in-out; /* Suaviza cambios */
-    box-shadow: 0 4px 0 #f6f6f7; /* Sombra para efecto de relieve */
-    text-align: center; /* Centra el texto */
-    width: 100%; /* Hace que el enlace ocupe todo el ancho del li */
+    display: inline-block;
+    /* Para aplicar transformaciones */
+    font-weight: bold;
+    /* Negrita */
+    transition: all 0.2s ease-in-out;
+    /* Suaviza cambios */
+    box-shadow: 0 4px 0 #f6f6f7;
+    /* Sombra para efecto de relieve */
+    text-align: center;
+    /* Centra el texto */
+    width: 100%;
+    /* Hace que el enlace ocupe todo el ancho del li */
 }
 
 .contacto ul li a:hover {
-    /*color: #0aa0be;*/ /*cambia al pasar el mouse*/
-    /*background-color: #b2ebf2;*/ /*Fondo azul más claro al pasar el mouse*/
-    transform: translateY(2px); /*Se mueve un poco hacia abajo*/
-    box-shadow: 0 2px 0 #ebebeb; /*Sombra más corta (se ve hundido)*/
+    color: #0aa0be;
+    /*cambia al pasar el mouse*/
+    /*background-color: #b2ebf2;*/
+    /*Fondo azul más claro al pasar el mouse*/
+    transform: translateY(2px);
+    /*Se mueve un poco hacia abajo*/
+    box-shadow: 0 2px 0 #ebebeb;
+    /*Sombra más corta (se ve hundido)*/
 }
 
 /*Selecciona solo el enlace que contiene "facebook.com"*/
 a[href*="facebook.com"] {
-    color: #3b5998; /* azul Facebook */
+    color: #3b5998;
+    /*azul Facebook*/
     font-weight: bold;
 }
 
 a[href*="facebook.com"]:hover {
-    color: #0d3050; /* más oscuro al pasar el mouse */
+    color: #0d3050;
+    /* más oscuro al pasar el mouse */
 }
 
-/* Selecciona solo el enlace que contiene "instagram.com" */
+/*Selecciona solo el enlace que contiene "instagram.com"*/
 a[href*="instagram.com"] {
-    color: #E1306C; /* rosa Instagram */
+    color: #E1306C;
+    /*rosa Instagram*/
     font-weight: bold;
-}
-a[href*="instagram.com"]:hover {
-    color: #9b0036; /* más oscuro al pasar el mouse */
-}
-/* Selecciona solo el enlace que contiene "wa.me" (WhatsApp) */
-a[href*="wa.me"] {
-    color: #25D366; /* verde WhatsApp */
-    font-weight: bold;
-}
-a[href*="wa.me"]:hover {
-    color: #128C7E; /* más oscuro al pasar el mouse */
 }
 
-/* Selecciona solo el enlace que contiene "tiktok.com" */
+a[href*="instagram.com"]:hover {
+    color: #9b0036;
+    /*más oscuro al pasar el mouse*/
+}
+
+/*Selecciona solo el enlace que contiene "wa.me" (WhatsApp)*/
+a[href*="wa.me"] {
+    color: #25D366;
+    /*verde WhatsApp*/
+    font-weight: bold;
+}
+
+a[href*="wa.me"]:hover {
+    color: #128C7E;
+    /*más oscuro al pasar el mouse*/
+}
+
+/* Selecciona solo el enlace que contiene "tiktok.com"*/
 a[href*="tiktok.com"] {
-    color: #010101; /* color negro típico de TikTok */
+    color: #010101;
+    /*color negro típico de TikTok*/
     font-weight: bold;
 }
 
 a[href*="tiktok.com"]:hover {
-    color: #69c9d0; /* azul turquesa de TikTok al pasar mouse */
+    color: #69c9d0;
+    /*azul turquesa de TikTok al pasar mouse*/
+}
+
+/*-----------ENLACES----------------*/
+.enlaces {
+    padding: 20px;
+    /*espacio interno*/
+    max-width: 1200px;
+    /*ancho máximo*/
+    margin: 0 auto;
+    /*centra el contenido*/
+    background-color: rgb(255, 255, 255);
+    /*fondo blanco*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /*sombra ligera*/
+    border-radius: 8px;
+    /*bordes redondeados*/
+    font-size: 1.2rem;
+    /*tamaño de fuente legible*/
+    line-height: 1.6;
+    /*espacio entre líneas*/
+    color: rgb(33, 33, 33);
+    /*color de texto oscuro*/
+    font-family: 'Arial', sans-serif;
+    /*fuente clara y legible*/
+    margin-bottom: 20px;
+    /*espacio abajo*/
+    text-align: justify;
+    /*justificado*/
+}
+
+.enlaces h4 {
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: #030303 1px 1px 1px;
+}
+
+.enlaces ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columnas iguales */
+    gap: 10px;
+    /* Espacio entre los elementos de la lista */
+    align-items: flex-start;
+    /* Alinea los elementos a la izquierda */
+    justify-content: center;
+}
+
+.enlaces ul li {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Espacio entre el icono y el texto */
+    background-color: #76d8df;
+    /* Fondo suave */
+    padding: 8px;
+    /* Espacio interno */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* Suaviza cambios */
+}
+
+.enlaces ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    /*background-color: #e0f7fa;*/
+    /* Fondo azul claro */
+    padding: 6px;
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    display: inline-block;
+    /* Para aplicar transformaciones */
+    font-weight: bold;
+    /* Negrita */
+    transition: all 0.2s ease-in-out;
+    /* Suaviza cambios */
+    box-shadow: 0 4px 0 #f6f6f7;
+    /* Sombra para efecto de relieve */
+    text-align: center;
+    /* Centra el texto */
+    width: 100%;
+    /* Hace que el enlace ocupe todo el ancho del li */
+    color: #000000;
+}
+
+.enlaces ul li a:hover {
+    color: #0aa0be;
+    /*cambia al pasar el mouse*/
+    /*background-color: #b2ebf2;*/
+    /*Fondo azul más claro al pasar el mouse*/
+    transform: translateY(2px);
+    /*Se mueve un poco hacia abajo*/
+    box-shadow: 0 2px 0 #ebebeb;
+    /*Sombra más corta (se ve hundido)*/
+}
+
+/*--------SERVICIOS--------*/
+
+.intro h1 {
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: #030303 1px 1px 1px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.intro p {
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: #030303 1px 1px 1px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.section {
+    padding: 10px;
+    /*espacio interno*/
+    max-width: 1200px;
+    /*ancho máximo*/
+    margin: 0 auto;
+    /*centra el contenido*/
+    background-color: rgb(255, 255, 255);
+    /*fondo blanco*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /*sombra ligera*/
+    border-radius: 8px;
+    /*bordes redondeados*/
+    font-size: 1.2rem;
+    /*tamaño de fuente legible*/
+    line-height: 1.6;
+    /*espacio entre líneas*/
+    color: rgb(33, 33, 33);
+    /*color de texto oscuro*/
+    font-family: 'Arial', sans-serif;
+    /*fuente clara y legible*/
+    margin-bottom: 20px;
+    /*espacio abajo*/
+    text-align: justify;
+    /*justificado*/
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columnas iguales */
+    gap: 10px;
+    /* Espacio entre los elementos de la lista */
+    align-items: flex-start;
+    /* Alinea los elementos a la izquierda */
+    justify-content: center;
+}
+
+.section ul li {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Espacio entre el icono y el texto */
+    background-color: #76d8df;
+    /* Fondo suave */
+    padding: 8px;
+    /* Espacio interno */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* Suaviza cambios */
+}
+
+.section ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    /*background-color: #e0f7fa;*/
+    /* Fondo azul claro */
+    padding: 6px;
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    display: inline-block;
+    /* Para aplicar transformaciones */
+    font-weight: bold;
+    /* Negrita */
+    transition: all 0.2s ease-in-out;
+    /* Suaviza cambios */
+    box-shadow: 0 4px 0 #f6f6f7;
+    /* Sombra para efecto de relieve */
+    text-align: center;
+    /* Centra el texto */
+    width: 100%;
+    /* Hace que el enlace ocupe todo el ancho del li */
+    color: #000000;
+}
+
+.section ul li a:hover {
+    color: #0aa0be;
+    /*cambia al pasar el mouse*/
+    /*background-color: #b2ebf2;*/
+    /*Fondo azul más claro al pasar el mouse*/
+    transform: translateY(2px);
+    /*Se mueve un poco hacia abajo*/
+    box-shadow: 0 2px 0 #ebebeb;
+    /*Sombra más corta (se ve hundido)*/
+}
+
+/* ESTILOS SOLO PARA SERVICIOS */
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f5fafa;
+}
+
+/* TARJETAS */
+.servicios .card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.servicios .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* TITULOS */
+.servicios h2 {
+  color: #0e6f68;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #1abc9c;
+  padding-bottom: 5px;
+}
+
+/* IMÁGENES */
+.servicios .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* TEXTOS */
+.servicios .card p {
+  margin-bottom: 10px;
+}
+
+.servicios .card .cta {
+  font-weight: bold;
+  color: #0e6f68;
+  margin-top: 10px;
+}
+
+/* BOTONES */
+.servicios .btn {
+  display: inline-block;
+  background-color: #1abc9c;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.servicios .btn:hover {
+  background-color: #16a085;
+  transform: scale(1.05);
+}
+
+/* ENLACE VOLVER ARRIBA */
+.servicios > p {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.servicios > p a {
+  color: #1abc9c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.servicios > p a:hover {
+  text-decoration: underline;
 }
