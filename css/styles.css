@@ -16,7 +16,9 @@ body {
     height: auto;
     object-fit: cover;
     position: relative;
-    top: -90px;
+    margin-top: auto;
+    display: block;
+    
 }
 
 /* Estilos para el encabezado */
@@ -25,7 +27,12 @@ body {
     /*Espacio interno*/
     text-align: left;
     /*logo a la izquierda*/
-    background-color: rgb(10, 160, 190);
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 /* Estilos para el texto debajo del logo */
@@ -34,7 +41,7 @@ body {
     /*centrado*/
     color: rgb(255, 255, 255);
     /*blanco*/
-    font-size: 4.0rem;
+    font-size: 5.0rem;
     /*tamaño grande*/
     margin: 0;
     /*sin margen*/
@@ -46,7 +53,7 @@ body {
     /*espacio entre líneas*/
     position: relative;
     /*Para posicionamiento absoluto*/
-    top: -200px;
+    top: -800px;
     /*Ajusta la posición vertical*/
 }
 
@@ -56,19 +63,22 @@ body {
     /*azul turquesa como en la imagen*/
     display: flex;
     /*Flexbox para alinear items*/
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     /*logo a la izquierda y menú a la derecha*/
-    position: relative;
+    position: fixed;
     /*Para posicionamiento absoluto*/
-    top: -845px;
+    top: 0;
+    left: 0;
     /*Ajusta la posición vertical*/
+    z-index: 1001;
 }
 
 /* Estilos para la lista de navegación home,servicios,contactos,preguntasfrecuentes*/
 .navegacion ul {
     list-style: none;
     /*Quita viñetas*/
-    padding: 0;
+    padding: 75px;
     margin: 0;
     display: flex;
     /*Los pone en fila*/
@@ -76,9 +86,10 @@ body {
     /*Centra el menú*/
     gap: 20px;
     /*Espacio entre items*/
-    position: relative;
+    position: fixed;
     /*Para posicionamiento absoluto*/
-    top: -300px;
+    top: 0%;
+    left: 450px;
     /*Ajusta la posición vertical*/
     margin-left: 450px;
     /*Ajusta la posición horizontal*/
