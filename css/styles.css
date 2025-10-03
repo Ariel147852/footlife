@@ -32,7 +32,7 @@ body {
 .contenido1 p {
     text-align: center;
     /*centrado*/
-    color: rgb(12, 12, 12);
+    color: rgb(255, 255, 255);
     /*blanco*/
     font-size: 4.0rem;
     /*tamaño grande*/
@@ -108,14 +108,14 @@ body {
     /*Quita subrayado*/
     color: rgb(255, 253, 253);
     /*Blanco*/
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(89, 121, 224);
     border-radius: 8px;
     /*Bordes redondeados*/
     font-weight: bold;
     /*Negrita*/
     transition: all 0.2s ease-in-out;
     /*Suaviza cambios*/
-    box-shadow: 0 4px 0 #f6f6f7;
+    box-shadow: 0 4px 0 #000000;
     /*Sombra para efecto de relieve*/
     display: inline-block;
     /*Para aplicar transformaciones*/
@@ -264,7 +264,7 @@ section[aria-labelledby="servicios-destacados"] {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #fcfffa;
     /*azul más oscuro al pasar el mouse*/
     transform: scale(1.05);
     /*efecto pequeño de agrandar*/
@@ -282,11 +282,11 @@ section[aria-labelledby="servicios-destacados"] {
 
 /* ---------- ESTILOS GENERALES DEL FOOTER ---------- */
 footer {
-  border-top: 1px solid #ccc;   /* Línea superior gris */
+  border-top: 1px solid #000000;   /* Línea superior gris */
   padding: 20px 40px;           /* Espaciado interno */
   font-family: Arial, sans-serif;
-  color: #222;                  /* Color de texto */
-  background: #fff;             /* Fondo blanco */
+  color: #000000;                  /* Color de texto */
+  background: #ffffff;             /* Fondo blanco */
 }
 
 /* ---------- CONTENEDOR PRINCIPAL ---------- */
