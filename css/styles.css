@@ -10,6 +10,29 @@ body {
     /*Fondo gris claro*/
 }
 
+.logo-nav {
+  height: 300px;
+  width: auto;
+  margin-left: 50px;
+  margin-top: -75px;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.pagina-servicios .logo-nav,
+.pagina-contactos .logo-nav,
+.pagina-preguntas .logo-nav {
+  margin-left: -150px;
+  margin-top: 0;
+  margin-right: 180px;
+}
 /* Estilos para la imagen de podología */
 .img-podologia {
     width: 100%;
@@ -23,17 +46,21 @@ body {
 
 /* Estilos para el encabezado */
 .brand {
-    padding: 0;
+    
     /*Espacio interno*/
     text-align: left;
     /*logo a la izquierda*/
-  
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-    z-index: 1000;
+    left: 0%;
+     display: flex;
+     align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    
+    
 }
+
 
 /* Estilos para el texto debajo del logo */
 .contenido1 p {
@@ -41,7 +68,7 @@ body {
     /*centrado*/
     color: rgb(255, 255, 255);
     /*blanco*/
-    font-size: 5.0rem;
+    font-size: 3.5rem;
     /*tamaño grande*/
     margin: 0;
     /*sin margen*/
@@ -53,7 +80,7 @@ body {
     /*espacio entre líneas*/
     position: relative;
     /*Para posicionamiento absoluto*/
-    top: -800px;
+    top: -400px;
     /*Ajusta la posición vertical*/
 }
 
@@ -61,38 +88,35 @@ body {
 .navegacion {
     /*background-color: rgb(10, 160, 190);*/
     /*azul turquesa como en la imagen*/
-    display: flex;
-    /*Flexbox para alinear items*/
-    justify-content: center;
-    align-items: center;
-    /*logo a la izquierda y menú a la derecha*/
-    position: fixed;
-    /*Para posicionamiento absoluto*/
-    top: 0;
-    left: 0;
-    /*Ajusta la posición vertical*/
-    z-index: 1001;
+  display: flex;
+  /*Flexbox para alinear items*/
+  flex-direction: row;
+  align-items: center;
+  /*logo a la izquierda y menú a la derecha*/
+  position: fixed;
+  /*Para posicionamiento absoluto*/
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 150px;
+  background-color: rgba(10, 160, 190, 0.95);
 }
-
+    
 /* Estilos para la lista de navegación home,servicios,contactos,preguntasfrecuentes*/
 .navegacion ul {
-    list-style: none;
-    /*Quita viñetas*/
-    padding: 75px;
-    margin: 0;
-    display: flex;
-    /*Los pone en fila*/
-    justify-content: center;
-    /*Centra el menú*/
-    gap: 20px;
-    /*Espacio entre items*/
-    position: fixed;
-    /*Para posicionamiento absoluto*/
-    top: 0%;
-    left: 450px;
-    /*Ajusta la posición vertical*/
-    margin-left: 450px;
-    /*Ajusta la posición horizontal*/
+  list-style: none;
+  /*quita viñetas*/
+  padding: 0 20px; /* Ajuste inicial para desktop */
+  margin: 0;
+  display: flex;
+  /*los pone en fila*/
+  align-items: center;
+  gap: 20px;
+  position: static;
+  margin-left: 180px;
+  margin-right: 0;
+  margin-top: 0;
 }
 
 /* Estilos para los enlaces de navegación */
@@ -103,14 +127,14 @@ body {
     /*Espacio entre ellos*/
     font-weight: bold;
     /*Negrita*/
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     /*Tamaño legible*/
     font-family: 'Arial', sans-serif;
     /*Fuente clara*/
     transition: color 0.3s ease;
     /*Suaviza cambios de color*/
     /*background-color: rgb(5, 136, 243);*/
-    padding: 6px;
+    padding: 2px;
 }
 
 /* Estilos para los enlaces */
@@ -119,7 +143,7 @@ body {
     /*Quita subrayado*/
     color: rgb(255, 253, 253);
     /*Blanco*/
-    background-color: rgb(89, 121, 224);
+    background-color:rgba(67, 71, 71, 0.95);
     border-radius: 8px;
     /*Bordes redondeados*/
     font-weight: bold;
@@ -130,6 +154,7 @@ body {
     /*Sombra para efecto de relieve*/
     display: inline-block;
     /*Para aplicar transformaciones*/
+    padding: 10px 15px; /* Padding inicial para mejor toque */
 }
 
 /*Efecto al pasar el mouse*/
@@ -176,6 +201,7 @@ body {
     text-align: justify;
     /*justificado*/
     position: relative;
+    margin-top: 120px; /* Espacio para la nav fija */
 }
 
 /*Estilo del título principal de la sección*/
@@ -277,6 +303,7 @@ section[aria-labelledby="servicios-destacados"] {
 .btn:hover {
     background-color: #fcfffa;
     /*azul más oscuro al pasar el mouse*/
+    color: #007bff; /* Ajuste de color de texto en hover */
     transform: scale(1.05);
     /*efecto pequeño de agrandar*/
 }
@@ -382,6 +409,15 @@ footer {
   
   .servicios-grid {
     grid-template-columns: 1fr; /* Servicios en una sola columna */
+  }
+
+  .footer-info,
+  .footer-servicios h3 {
+    text-align: center;
+  }
+
+  footer {
+    padding: 20px 20px; /* Reduce padding en mobile */
   }
 }
 
@@ -598,4 +634,239 @@ footer {
 
 .servicios > p a:hover {
   text-decoration: underline;
+}
+
+.horarios {
+  max-width: 500px;
+  margin: 50px auto 32px auto; /* Espacio para la nav fija y margen abajo */
+  background: #78d2ee;
+  border-radius: 10px;
+  border: 1px solid gray;
+  box-shadow: 0 2px 10px rgba(10,160,190,0.08);
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.horarios h2 {
+  color: #003641;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.horarios p {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+/* Responsive horarios */
+@media (max-width: 600px) {
+  .horarios {
+    padding: 18px 8px;
+    margin-top: 90px;
+  }
+  .horarios h2 {
+    font-size: 1.2rem;
+  }
+  .horarios p {
+    font-size: 1rem;
+  }
+}
+/* ----------- CONTACTOS: REDES Y CONTACTO DIRECTO ----------- */
+.redes {
+  max-width: 700px;       
+  margin: 32px auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(10,160,190,0.08);
+  padding: 24px 32px;      
+  text-align: center;
+  border: 2px solid rgba(99, 99, 99, 0.904);
+}
+.redes h2 {
+  color: #002f4e;           
+  font-size: 2.5rem;        
+  font-weight: bold;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #5c5c5c; /* Sombra suave */
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;     /* Centra verticalmente */
+  gap: 40px;               /*  espacio entre íconos */
+  margin-top: 12px;
+  flex-wrap: wrap;         /* Permite que se acomoden en pantallas pequeñas */
+}
+
+.social-links a {
+  color: #000000;
+  font-size: 1rem;
+  transition: color 0.2s;
+  text-decoration: none;
+  display: flex;
+  align-items: center;     /* Ícono y texto alineados */
+  gap: 5px;
+}
+
+.social-links a span {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  color: #007bff;
+  transform: scale(1.15);
+}
+
+/* Responsive redes */
+@media (max-width: 600px) {
+  .redes {
+    padding: 12px 4px;
+    max-width: 82vw;
+  }
+  .redes h2 {
+    font-size: 1.2rem;
+  }
+  .social-links {
+    gap: 12px;
+  }
+  .social-links a {
+    font-size: 1.3rem;
+  }
+}
+.ubicacion {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #f8fcff;
+  border-radius: 12px;
+  border: 2px solid #0aa0be;
+  box-shadow: 0 2px 12px rgba(10,160,190,0.10);
+  padding: 32px 28px;
+  text-align: center;
+  position: relative;
+}
+
+.ubicacion h2 {
+  color: #0aa0be;
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 22px;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #b2ebf2;
+}
+
+.ubicacion iframe {
+  width: 100%;
+  height: 320px;
+  border: 2px solid #0aa0be;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(10,160,190,0.08);
+}
+
+/* Responsive ubicación */
+@media (max-width: 600px) {
+  .ubicacion {
+    padding: 14px 4px;
+    max-width: 98vw;
+  }
+  .ubicacion h2 {
+    font-size: 1.3rem;
+  }
+  .ubicacion iframe {
+    height: 180px;
+  }
+}
+/* Panel principal de preguntas frecuentes */
+.faq-panel {
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  border: 2px solid #0aa0be;
+  box-shadow: 0 2px 12px rgba(10,160,190,0.10);
+  padding: 32px 28px;
+  position: relative;
+}
+
+/* Título principal */
+.faq-panel h1,
+.faq-panel h2 {
+  color: #0aa0be;
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow: 0 2px 8px #b2ebf2;
+}
+
+/* Descripción */
+.faq-panel p {
+  color: #333;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Sección de preguntas */
+.faq-panel section {
+  margin-top: 18px;
+}
+
+/* Cada pregunta */
+.faq-panel article {
+  background: #eafaff;
+  border-radius: 8px;
+  border: 1px solid #b2ebf2;
+  box-shadow: 0 1px 6px rgba(10,160,190,0.06);
+  margin-bottom: 18px;
+  padding: 18px 16px;
+  transition: box-shadow 0.2s;
+}
+
+.faq-panel article:hover {
+  box-shadow: 0 4px 16px rgba(10,160,190,0.12);
+}
+
+/* Pregunta */
+.faq-panel article h2 {
+  color: #0aa0be;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-shadow: none;
+  text-align: left;
+}
+
+/* Respuesta */
+.faq-panel article p {
+  color: #003641;
+  font-size: 1rem;
+  margin: 0;
+  text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .faq-panel {
+    padding: 14px 4px;
+    max-width: 98vw;
+  }
+  .faq-panel h1,
+  .faq-panel h2 {
+    font-size: 1.3rem;
+  }
+  .faq-panel article h2 {
+    font-size: 1rem;
+  }
+  .faq-panel article p {
+    font-size: 0.95rem;
+  }
 }
