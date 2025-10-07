@@ -6,7 +6,7 @@ body {
   /*Quita padding por defecto*/
   font-family: 'Arial', sans-serif;
   /*Fuente clara y legible*/
-  background-color: rgb(0, 0, 0);
+  background-color: #e8f5f9;
   /*Fondo gris claro*/
 }
 
@@ -162,19 +162,19 @@ body {
 }
 
 /*Efecto al pasar el mouse*/
-/*.navegacion ul li a:hover {
+.navegacion ul li a:hover {
   /*background-color: rgb(104, 165, 245);*/
-  /*transform: translateY(2px);*/
+  transform: translateY(2px);
   /*Se mueve un poco hacia abajo*/
   /*box-shadow: 0 2px 0 #ebebeb;*/
   /*Sombra más corta (se ve hundido)*/
-/*}
+}
 
 /*Efecto al hacer clic*/
 .navegacion ul li a:active {
   transform: translateY(4px);
   /*Se mueve más hacia abajo*/
-  box-shadow: 0 1px 0 #0c63aa;
+  /*box-shadow: 0 1px 0 #0c63aa;*/
   /*Sombra aún más corta*/
 }
 
@@ -205,7 +205,7 @@ body {
   text-align: justify;
   /*justificado*/
   position: relative;
-  margin-top: 120px;
+  margin-top: -70px;
   /* Espacio para la nav fija */
 }
 
