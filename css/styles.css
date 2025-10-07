@@ -506,6 +506,8 @@ footer {
   /*espacio abajo*/
   text-align: justify;
   /*justificado*/
+  position: relative;
+  margin-top: -70px;
 }
 
 .section ul {
@@ -653,12 +655,6 @@ footer {
   transform: scale(1.05);
 }
 
-/* ENLACE VOLVER ARRIBA */
-.servicios>p {
-  grid-column: 1 / -1;
-  text-align: center;
-  margin-top: 30px;
-}
 
 .servicios>p a {
   color: #1abc9c;
