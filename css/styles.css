@@ -1,4 +1,3 @@
-
 /* Estilos generales */
 body {
   margin: 0;
@@ -10,23 +9,23 @@ body {
   background-color: #7db8f350;
   /*Fondo gris claro*/
 }
-
+/* Estilos para la imagen del logo en la barra de navegación */
 .logo-nav {
   height: 300px;
   width: auto;
   margin-left: 50px;
   margin-top: -105px;
   display: block;
-  
-}
 
+}
+/* Contenedor del logo en la nav */
 .nav-logo {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   height: 100%;
 }
-
+/* Ajustes específicos para cada página */
 .pagina-servicios .logo-nav,
 .pagina-contactos .logo-nav,
 .pagina-preguntas .logo-nav {
@@ -49,13 +48,15 @@ body {
 /*  SERVICIOS DESTACADOS imagen dentro de cada tarjeta */
 
 .grid-servicios article {
-  display: flex;           /* apila imagen, título, texto, botón */
+  display: flex;
+  /* apila imagen, título, texto, botón */
   flex-direction: column;
-  padding: 0;              
-  overflow: hidden;        /* recorta sobrante de la imagen */
-  border-radius: 12px;     
-  background: #fff;       
-  border: 1px solid #ddd;  
+  padding: 0;
+  overflow: hidden;
+  /* recorta sobrante de la imagen */
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #ddd;
 }
 
 /* recortada sin deformar */
@@ -63,10 +64,9 @@ body {
   width: 100%;
   /* Altura/relación de aspecto */
   aspect-ratio: 16 / 9;
-  object-fit: cover;       
+  object-fit: cover;
   display: block;
 }
-
 
 /* Espaciado interno del contenido (título y párrafos) */
 .grid-servicios article h3 {
@@ -74,20 +74,23 @@ body {
 }
 
 .grid-servicios article p {
-  margin: 0 16px 12px;     /* margen lateral uniforme */
+  margin: 0 16px 12px;
+  /* margen lateral uniforme */
 }
 
 /* Botón separado del borde inferior */
 .grid-servicios article .btn {
-  margin: 0 16px 16px;    
+  margin: 0 16px 16px;
 }
 
 /* Ajustes para pantallas más grandes */
 @media (min-width: 768px) {
   .grid-servicios article img {
-    aspect-ratio: 4 / 3;   /* relación de aspecto más cuadrada */
+    aspect-ratio: 4 / 3;
+    /* relación de aspecto más cuadrada */
   }
 }
+
 /* Fin estilos servicios destacados */
 
 
@@ -113,18 +116,21 @@ Estilos para el encabezado foto y texto
 
 /*Carrusel de imagenes hero*/
 
-.hero-slider { /* contenedor del carrusel */
-  position: relative; 
-  width: 100%; 
-  height: 90vh; 
-  overflow: hidden; /* oculta lo que se sale */
+.hero-slider {
+  /* contenedor del carrusel */
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  /* oculta lo que se sale */
   margin-top: 90px;
   margin-bottom: 90px;
 }
 
 /* Cada imagen del carrusel */
 .hero-slider .slide {
-  display: none; /* solo se muestra una imagen a la vez */
+  display: none;
+  /* solo se muestra una imagen a la vez */
   width: 100%;
   height: 100%;
 }
@@ -133,37 +139,47 @@ Estilos para el encabezado foto y texto
 .hero-slider img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* ajusta la imagen sin deformarla */
+  object-fit: cover;
+  /* ajusta la imagen sin deformarla */
   border-radius: 0;
 }
 
 /* Botones de anterior y siguiente */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
-  top: 50%; /* centrados verticalmente */
+  top: 50%;
+  /* centrados verticalmente */
   transform: translateY(-50%);
   padding: 10px;
   color: white;
   font-size: 2rem;
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.3); /* fondo semi-transparente */
+  background-color: rgba(0, 0, 0, 0.3);
+  /* fondo semi-transparente */
   border: none;
   border-radius: 5px;
   transition: background 0.3s;
-  z-index: 10; /* siempre encima */
+  z-index: 10;
+  /* siempre encima */
 }
 
-.prev:hover, .next:hover { /* efecto al pasar el mouse */
-  background-color: rgba(0, 0, 0, 0.6); /* más oscuro al pasar el mouse */
+.prev:hover,
+.next:hover {
+  /* efecto al pasar el mouse */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* más oscuro al pasar el mouse */
 }
 
-.prev { 
-  left: 20px; /* a la izquierda */
+.prev {
+  left: 20px;
+  /* a la izquierda */
 }
 
 .next {
-  right: 20px; /* a la derecha */
+  right: 20px;
+  /* a la derecha */
 }
 
 /* Efecto de desvanecido */
@@ -173,9 +189,15 @@ Estilos para el encabezado foto y texto
 }
 
 @keyframes fadeEffect {
-  from {opacity: 0.4;}
-  to {opacity: 1;}
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
+
 /* Fin carrusel hero */
 
 
@@ -598,7 +620,8 @@ footer {
   font-size: 25px;
 }
 
-.section { /*Nuestros servicios*/
+.section {
+  /*Nuestros servicios*/
   padding: 10px;
   /*espacio interno*/
   max-width: 1200px;
