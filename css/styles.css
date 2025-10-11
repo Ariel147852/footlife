@@ -1,3 +1,4 @@
+
 /* Estilos generales */
 body {
   margin: 0;
@@ -45,7 +46,7 @@ body {
 
 }
 
-/* SERVICIOS DESTACADOS: imagen dentro de cada tarjeta */
+/*  SERVICIOS DESTACADOS imagen dentro de cada tarjeta */
 
 .grid-servicios article {
   display: flex;           /* apila imagen, título, texto, botón */
@@ -65,6 +66,7 @@ body {
   object-fit: cover;       
   display: block;
 }
+
 
 /* Espaciado interno del contenido (título y párrafos) */
 .grid-servicios article h3 {
