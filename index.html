@@ -16,13 +16,29 @@
 
 <body>
   <header class="header">
-    <div class="brand">
+
+    <!--<div class="brand">
       <img src="img/blog-1.png" alt="Fondo podologa" class="img-podologia">
-    </div>
+    </div> -->
+
+    <!-- Hero con carrusel de promosiones -->
+    <section class="hero-slider" aria-label="Promociones FootLife">
+      <div class="slide"><img src="img/promo1.png" alt="Promoción FootLife 1"></div>
+      <div class="slide"><img src="img/promo2.png" alt="Promoción FootLife 2"></div>
+      <div class="slide"><img src="img/promo3.png" alt="Promoción FootLife 3"></div>
+      <div class="slide"><img src="img/promo4.png" alt="Promoción FootLife 4"></div>
+
+      <!-- Controles del carrusel -->
+      <button class="prev" type="button" aria-label="Anterior">‹</button>
+      <button class="next" type="button" aria-label="Siguiente">›</button>
+    </section>
+
+
+
     <!--<div class="contenido1">
       <p>Expertos en tus pies, cuidamos tu camino</p>
     </div>-->
-    <nav class="navegacion" aria-label="Navegación principal"> 
+    <nav class="navegacion" aria-label="Navegación principal">
       <div class="nav-logo">
         <img src="img/logofoot.png" alt="Logo de FootLife" class="logo-nav" />
       </div>
@@ -41,7 +57,14 @@
 
       <section class="grid-servicios" aria-label="Listado de servicios">
         <article>
+
+           <!--imagen de profilaxis podal-->
+          <a href="servicios.html#profilaxis">
+            <img src="img/profilaxis.jpg" alt="Imagen de Profilaxis podal" class="img-servicio">
+          </a>
+          
           <h3>Profilaxis podal</h3>
+
           <p>Cuidado preventivo de tus pies: eliminación de durezas y callosidades para mayor comodidad.</p>
           <p>
             <a class="btn" href="servicios.html#profilaxis" aria-label="Ver más sobre Profilaxis podal">Ver más</a>
@@ -49,7 +72,14 @@
         </article>
 
         <article>
+
+           <!--imagen de uña encarnada-->
+          <a href="servicios.html#onicocriptosis"> 
+            <img src="img/onicocriptosis.jpeg" alt="Imagen de Onicocriptosis (uña encarnada)" class="img-servicio">
+          </a>
+
           <h3>Onicocriptosis (uña encarnada)</h3>
+
           <p>Alivio del dolor y corrección del borde ungueal según el grado de la lesión.</p>
           <p>
             <a class="btn" href="servicios.html#onicocriptosis" aria-label="Ver más sobre Onicocriptosis">Ver más</a>
@@ -57,7 +87,14 @@
         </article>
 
         <article>
+
+          <!--imagen de onicomicosis-->
+          <a href="servicios.html#onicomicosis">
+            <img src="img/onicomicosis.jpg" alt="Imagen de Onicomicosis (hongos en las uñas)" class="img-servicio">
+          </a>
+
           <h3>Onicomicosis (hongos en las uñas)</h3>
+
           <p>Limpieza, reducción del engrosamiento y tratamiento tópico para recuperar la apariencia natural.</p>
           <p>
             <a class="btn" href="servicios.html#onicomicosis" aria-label="Ver más sobre Onicomicosis">Ver más</a>
@@ -65,7 +102,14 @@
         </article>
 
         <article>
+
+          <!--imagen de dermatomicosis-->
+          <a href="servicios.html#dermatomicosis">
+            <img src="img/dermatomicosis.jpg" alt="Imagen de Dermatomicosis (hongos en la piel)" class="img-servicio">
+          </a>
+
           <h3>Dermatomicosis (hongos en la piel)</h3>
+
           <p>Tratamiento para infecciones en la piel del pie y recomendaciones para evitar recurrencias.</p>
           <p>
             <a class="btn" href="servicios.html#dermatomicosis" aria-label="Ver más sobre Dermatomicosis">Ver más</a>
@@ -76,55 +120,55 @@
   </main>
 
   <footer>
-  <div class="footer-container">
-    
-    <!-- Columna izquierda -->
-    <div class="footer-info">
-      <h3>Foot Life</h3>
-      <p>
-        Se usa el contacto solo para coordinar citas; no se guardan historias clínicas.
-      </p>
-      <div class="footer-redes">
-        <a href="https://wa.me/593995455190?text=Hola%20FootLife%2C%20quisiera%20agendar%20una%20cita."
-           target="_blank" rel="noopener noreferrer">
-          <i class="ri-whatsapp-line"></i>
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=61566553147762" 
-           target="_blank" rel="noopener noreferrer">
-          <i class="ri-facebook-fill"></i>
-        </a>
-        <a href="https://www.instagram.com/footlife587" 
-           target="_blank" rel="noopener noreferrer">
-          <i class="ri-instagram-line"></i>
-        </a>
-        <a href="https://www.tiktok.com/@footlife.podologia" 
-           target="_blank" rel="noopener noreferrer">
-          <i class="ri-tiktok-fill"></i>
-        </a>
-      </div>
-    </div>
+    <div class="footer-container">
 
-    <!-- Columna derecha -->
-    <div class="footer-servicios">
-      <h3>Servicios</h3>
-      <div class="servicios-grid">
-        <ul>
-          <li><a href="servicios.html#profilaxis">Profilaxis podal</a></li>
-          <li><a href="servicios.html#onicocriptosis">Onicocriptosis (uñeros 1-2-3 grado)</a></li>
-          <li><a href="servicios.html#onicomicosis">Onicomicosis</a></li>
-          <li><a href="servicios.html#dermatomicosis">Dermatomicosis</a></li>
-        </ul>
-        <ul>
-          <li><a href="servicios.html#helotomias">Helotomías (retiro de callosidades)</a></li>
-          <li><a href="servicios.html#verrugas">Verrugas plantares</a></li>
-          <li><a href="servicios.html#piediabetico">Pie diabético</a></li>
-          <li><a href="servicios.html#ortesicos">Ortesis personalizados</a></li>
-        </ul>
+      <!-- Columna izquierda -->
+      <div class="footer-info">
+        <h3>Foot Life</h3>
+        <p>
+          Se usa el contacto solo para coordinar citas; no se guardan historias clínicas.
+        </p>
+        <div class="footer-redes">
+          <a href="https://wa.me/593995455190?text=Hola%20FootLife%2C%20quisiera%20agendar%20una%20cita."
+            target="_blank" rel="noopener noreferrer">
+            <i class="ri-whatsapp-line"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61566553147762" target="_blank" rel="noopener noreferrer">
+            <i class="ri-facebook-fill"></i>
+          </a>
+          <a href="https://www.instagram.com/footlife587" target="_blank" rel="noopener noreferrer">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="https://www.tiktok.com/@footlife.podologia" target="_blank" rel="noopener noreferrer">
+            <i class="ri-tiktok-fill"></i>
+          </a>
+        </div>
       </div>
-    </div>
 
-  </div>
-</footer>
+      <!-- Columna derecha -->
+      <div class="footer-servicios">
+        <h3>Servicios</h3>
+        <div class="servicios-grid">
+          <ul>
+            <li><a href="servicios.html#profilaxis">Profilaxis podal</a></li>
+            <li><a href="servicios.html#onicocriptosis">Onicocriptosis (uñeros 1-2-3 grado)</a></li>
+            <li><a href="servicios.html#onicomicosis">Onicomicosis</a></li>
+            <li><a href="servicios.html#dermatomicosis">Dermatomicosis</a></li>
+          </ul>
+          <ul>
+            <li><a href="servicios.html#helotomias">Helotomías (retiro de callosidades)</a></li>
+            <li><a href="servicios.html#verrugas">Verrugas plantares</a></li>
+            <li><a href="servicios.html#piediabetico">Pie diabético</a></li>
+            <li><a href="servicios.html#ortesicos">Ortesis personalizados</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Enlazado para el Carrusel-->
+  <script src="js/carrusel.js"></script>
 
 </body>
 

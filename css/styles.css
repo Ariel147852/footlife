@@ -45,12 +45,57 @@ body {
 
 }
 
-/* Estilos para el encabezado */
+/* SERVICIOS DESTACADOS: imagen dentro de cada tarjeta */
+
+.grid-servicios article {
+  display: flex;           /* apila imagen, título, texto, botón */
+  flex-direction: column;
+  padding: 0;              
+  overflow: hidden;        /* recorta sobrante de la imagen */
+  border-radius: 12px;     
+  background: #fff;       
+  border: 1px solid #ddd;  
+}
+
+/* recortada sin deformar */
+.grid-servicios article img {
+  width: 100%;
+  /* Altura/relación de aspecto */
+  aspect-ratio: 16 / 9;
+  object-fit: cover;       
+  display: block;
+}
+
+/* Espaciado interno del contenido (título y párrafos) */
+.grid-servicios article h3 {
+  margin: 12px 16px 6px;
+}
+
+.grid-servicios article p {
+  margin: 0 16px 12px;     /* margen lateral uniforme */
+}
+
+/* Botón separado del borde inferior */
+.grid-servicios article .btn {
+  margin: 0 16px 16px;    
+}
+
+/* Ajustes para pantallas más grandes */
+@media (min-width: 768px) {
+  .grid-servicios article img {
+    aspect-ratio: 4 / 3;   /* relación de aspecto más cuadrada */
+  }
+}
+/* Fin estilos servicios destacados */
+
+
+/* 
+Estilos para el encabezado foto y texto
 .brand {
 
-  /*Espacio interno*/
+ 
   text-align: left;
-  /*logo a la izquierda*/
+ 
   position: relative;
   width: 100%;
   left: 0%;
@@ -60,8 +105,11 @@ body {
   height: 100%;
   margin-top: -60px;
 
-
 }
+ */
+
+
+
 
 
 /* Estilos para el texto debajo del logo */
